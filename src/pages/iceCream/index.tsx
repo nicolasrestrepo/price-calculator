@@ -59,7 +59,6 @@ const IceCream = () => {
 
 
     useEffect(() => {
-
         const priceOfNeapolitan = flavorOptions
         .reduce((acumPrice: number, currentFlavor: IFlavors): number => {
             return acumPrice + currentFlavor.value
@@ -78,8 +77,7 @@ const IceCream = () => {
             ]
             setFlavorOptions(newFlavors);
         }
-
-    }, []);
+    }, [flavorOptions]);
 
     return (
         <Container>
