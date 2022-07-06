@@ -50,7 +50,7 @@ const IceCream = () => {
 
         const { volume, flavor, milkCost } = formik.values;
 
-        if(volume > 0 && flavor != 0 && milkCost > 0){
+        if(volume > 0 && flavor !== 0 && milkCost > 0){
             const calculateTotal: number = 3 * volume * milkCost + volume * flavor
 
             setTotal(parseFloat(calculateTotal.toFixed(2)));
@@ -76,7 +76,6 @@ const IceCream = () => {
                     value: priceOfNeapolitan
                 }
             ]
-    
             setFlavorOptions(newFlavors);
         }
 
