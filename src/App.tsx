@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import CartProvider from './context/provider'
+// Layout
+import MainLayout from './layouts/main'
+// pages
+import Home from './pages/home';
+// import FrozenPizza from "./pages/frozenPizza";
+import IceCream from "./pages/iceCream";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="ice-cream" element={<IceCream />} />
+          {/* <Route path="frozen-pizza" element={<FrozenPizza />} /> */}
+        </Routes>
+      </MainLayout>
+    </CartProvider>
   );
 }
 
