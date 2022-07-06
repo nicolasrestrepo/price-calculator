@@ -78,6 +78,10 @@ create a page for each product, since the data received in each one is very diff
 
 I was a bit sick the two days after they sent me the test, because of the time I couldn't finish the logic for Frozen Pizza, the logic I would have used would be the same as for Ice Cream but on a larger scale, it's the only thing I need to finish because all the logic that I have in Ice Cream and the bonuses are complete
 
+# URL in Netlify
+
+https://price-calculator-reason-consulting.netlify.app/
+
 # Author 
 Nicolas Restrepo
 
